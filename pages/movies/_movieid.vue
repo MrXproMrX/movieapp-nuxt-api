@@ -23,7 +23,7 @@
 
                     <div class="movie-fact">
                         <span>Released:</span>  {{ 
-                            new Date(movie.release_date).toLocaleString('en-us',{
+                            new Date(movie.release_date).toLocaleString('ru-us',{
                             month:'long',
                             day:'numeric',
                             year:'numeric',

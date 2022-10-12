@@ -84,8 +84,8 @@
             
             <div class="release">
               <p>
-                Released:{{
-                  new Date(movie.release_date).toLocaleString('en-us',{
+                Released: {{ 
+                  new Date(movie.release_date).toLocaleString('ru-us',{
                     month:'long',
                     day:'numeric',
                     year:'numeric',
