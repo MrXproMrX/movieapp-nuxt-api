@@ -147,7 +147,10 @@ export default {
       await this.getMovies()
       return
     }
-    await this.searchMovies()  
+    
+    if (this.searchInput !== '') {
+      await this.searchMovies()
+    }
   },
 
   fetchDelay:1000,
@@ -171,6 +174,11 @@ export default {
       })
     },
   },
+  watch:{
+      searchInput() {
+        console.log(this.searchInput)
+      },
+    }
 }
 </script>
 
